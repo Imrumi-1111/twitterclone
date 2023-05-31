@@ -43,43 +43,44 @@ export default function Details() {
           placeholder="Name"
           onChange={(e) => setName(e.target.value)}
           sx={{
-            width: "30rem",
+            width: "25rem",
             marginBottom: "20px",
+            height:"2.5rem"
           }}
         />
       </div>
       {useEmail ? (
-        <div>
+        <div >
           <OutlinedInput
             placeholder="Email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             sx={{
-              width: "30rem",
+              width: "25rem",
+              height:"2.5rem"
             }}
           />
         </div>
       ) : (
-        <div>
+        <div >
           <OutlinedInput
             placeholder="Phone"
             type="number"
             value={phone}
             onChange={(e) => setPhone(e.target.value)}
             sx={{
-              width: "30rem",
+              width: "25rem",
+              height:"2.5rem"
             }}
           />
         </div>
       )}
-      <a href="/" onClick={handleToggle} className="emailtoggle">
+      <a href="/" onClick={handleToggle} className={styles.emailtoggle}>
         {useEmail ? "Use phone instead" : "Use email instead"}
       </a>
-      <DetailsText />
-      <GroupedSelect />
-      <br />
-      <br />
-      <SignUpButton handleSignup={handleSignup} />
+      <div><DetailsText /></div>
+      <div><GroupedSelect /></div>
+      <div className={styles.btn}><SignUpButton handleSignup={handleSignup} /></div>
     </div>
   );
 }

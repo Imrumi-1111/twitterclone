@@ -7,8 +7,7 @@ export default function Text() {
       <p>
         By signing up, you agree to the{" "}
         <Link to="https://twitter.com/en/tos">Terms of Service</Link>
-      </p>
-      <p>
+      <br/>
         {" "}
         and <Link to="https://twitter.com/en/privacy">Privacy Policy</Link>,
         including{" "}
@@ -16,10 +15,9 @@ export default function Text() {
           {" "}
           Cookie Use
         </Link>
-        .
+        
       </p>
-      <br />
-      <br />
+      
       <p>
         Have an account already? <Link to="/login">Log in</Link>
       </p>

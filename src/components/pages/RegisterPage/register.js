@@ -18,8 +18,7 @@ export default function SignUp() {
         <h1>Join Twitter today</h1>
         <GoogleButton />
         <AppleButton />
-        <br />
-        <br />
+        
         <div className={styles.or}>
           <span>or</span>
         </div>

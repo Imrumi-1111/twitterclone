@@ -7,11 +7,15 @@ export default function SignUpButton({handleSignup}) {
     <div>
       <Button
         variant="outlined"
-        // onClick={() => navigate("/home")}
-        onClick={handleSignup}
+        onClick={() => {
+          navigate("/login");
+        handleSignup()
+        }}
         sx={{
           backgroundColor:"white",
-          width: "30rem",
+          width: "25rem",
+          borderRadius:"15px",
+          textTransform : "none"
         }}
       >
         Sign Up
